@@ -1,0 +1,23 @@
+clear;
+clc;
+% A = 627;
+% B = 0;
+% C = 14968;
+A = 40;
+B = 0;
+C = 10;
+
+% % x =0.01;
+% 1/(x*log(x))+A/x+B-2*C*x;
+x=linspace(0,5);
+y = x.^A .* exp(B*x-C*x.^2);
+% y = log(x).*x.^A.*exp(B.*x-C.*x.^2);
+% y = log(-log(x))+A*log(x)+B*x-C*x.^2;
+% y = 1./(x.*log(x))+A./x+B-2*C*x;
+% y = -1./x.^2*( (1+log(x))/(log(x)).^2+A) -2*C;
+% y = exp(B*x - C*x.^2 + A*log(x));
+%  y = B.*x - C*x.^2 + A*log(x);
+plot(x,y);
+% % % plot(x,y);
+% plot(x,y1);
+% % plot(x,y2);
